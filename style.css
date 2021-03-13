@@ -301,3 +301,70 @@ section{
     margin-top: 20px;
     font-size: 1em;
 }
+
+.contato{
+    background: url(img/bg3.jpg);
+    background-size: cover;
+}
+
+.formcontato{
+    padding: 75px 50px;
+    max-width: 500px;
+    margin-top: 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+}
+
+.formcontato h3{
+    color: #111;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.formcontato .inputBox{
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.formcontato .inputBox input,
+.formcontato .inputBox textarea{
+    width: 100%;
+    padding: 10px;
+    color: #111;
+    font-size: 16px;
+    font-weight: 300;
+    border: 1px solid #555;
+    outline: none;
+    resize: none;
+}
+
+.formcontato .inputBox input[type="submit"]{
+    color: #111;
+    font-size: 1em;
+    font-weight: 500;
+    background: #ff0157;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.3s;
+    max-width: 100px;
+    border: none;
+    cursor: pointer;
+}
+
+.copyR{
+    padding:8px 40px;
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.copyR p{
+    color: #333;
+}
+
+.copyR a{
+    color: #ff0157;
+    font-weight: 500;
+}
