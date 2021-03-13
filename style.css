@@ -239,3 +239,65 @@ section{
     font-weight: 400;
     color: #111;
 }
+
+.depoimentos{
+    background: url(img/bg2.jpg);
+    background-size: cover;
+}
+
+.branco .titleText, .branco p{
+    color: #fff;
+}
+
+.depoimentos .content{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.depoimentos .content .box{
+    width: 340px;
+    margin: 20px;
+    padding: 40px;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.depoimentos .content .box .imgBx{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.depoimentos .content .box .imgBx img{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.depoimentos .content .box .text{
+    text-align: center;
+}
+
+.depoimentos .content .box .text p{
+    color: #668;
+    font-style: italic;
+}
+
+.depoimentos .content .box .text h3{
+    color: #ff0157;
+    font-weight: 600;
+    margin-top: 20px;
+    font-size: 1em;
+}
