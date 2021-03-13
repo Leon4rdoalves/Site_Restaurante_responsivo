@@ -12,13 +12,14 @@
 <body>
     <header>
         <a href="#" class="logo"><span>A</span>Food<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
         <ul class="nav">
-            <li><a href="#banner">Home</a></li>
-            <li><a href="#sobre">Sobre nós</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#chefes">Chefes</a></li>
-            <li><a href="#depoimentos">Depoimentos</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#sobre" onclick="toggleMenu();">Sobre nós</a></li>
+            <li><a href="#menu" onclick="toggleMenu();">Menu</a></li>
+            <li><a href="#chefes" onclick="toggleMenu();">Chefes</a></li>
+            <li><a href="#depoimentos" onclick="toggleMenu();">Depoimentos</a></li>
+            <li><a href="#contato" onclick="toggleMenu();">Contato</a></li>
         </ul>
     </header>
 
@@ -256,7 +257,14 @@
             const header = document.querySelector('header');
             header.classList.toggle("sticky", window.scrollY > 0);
         });
-    </script>
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const nav = document.querySelector('.nav');
+            nav.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        }
+    </script> 
 
 </body>
 </html>
