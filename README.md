@@ -1,4 +1,4 @@
-# Site_Restaurante_responsivo
+# Site *responsivo* para restaurantes.
 
 
 Dá uma olhada no resultado: https://leon4rdoalves.github.io/Site_Restaurante_responsivo/
