@@ -368,3 +368,110 @@ section{
     color: #ff0157;
     font-weight: 500;
 }
+
+@media (max-width: 991px){
+    header, 
+    header.sticky {
+        padding: 10px 20px;
+    }
+    header .nav {
+        display: none;
+    }
+    header .nav li {
+        margin-left: 0;
+    }
+    header .nav li a {
+        color: #111;
+        font-size: 1.6em;  
+    }
+    header .nav.active { 
+        top: 68px;
+        left: 0;
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    .menuToggle {
+        width: 40px;
+        height: 40px;
+        background: url(img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        position: relative;
+    }
+    .menuToggle.active {
+        background: url(img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle {
+        filter: invert(1);
+    }
+    section {
+        padding: 20px;
+    }
+    .banner .content h2 {
+        font-size: 3em;
+        color: #fff;
+    }
+    .row { 
+        flex-direction: column;
+    }
+    .row .col50 {
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgBx {
+        height: 300px;
+        margin-top: 20px;
+    }
+    .menu .content {
+        margin-top: 20px;
+    }
+    .menu .content .box {
+        margin: 10px;
+    }
+    .menu .content .box .imgBx {
+        height: 260px;
+    }
+    .titulo {
+        text-align: center;
+    }
+    .titleText {
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .depoimentos .content .box {
+        margin: 10px;
+        padding: 20px;
+    }
+    .formcontato {
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .copyR {
+        padding:1px 5px;
+        text-align: center;
+        border-top: 1px solid rgba(0,0,0,0.1);
+        font-size: 12px;
+    }
+   
+}
+
+@media (max-width: 480px){
+    .banner .content h2{
+        font-size: 2.2em;
+        color: #fff;
+    }
+}
